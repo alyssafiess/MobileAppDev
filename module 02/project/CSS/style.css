@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+#header {
+  background-color: yellow;
+  color: black;
+}
+#header-text {
+  font-size: 24px;
+  display: flex:run-in;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+#top-navigation {
+  display: flex;
+  background-color: white;
+}
+#main-content {
+  min-height: 480px;
+  display: flex;
+}

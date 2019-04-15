@@ -130,30 +130,31 @@ img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .sidenav {
-  width: 130px;
+  height: 100%;
+  width: 160px;
   position: fixed;
   z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #eee;
+  top: 0;
+  left: 0;
+  background-color: #111;
   overflow-x: hidden;
-  padding: 8px 0;
+  padding-top: 20px;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #2196F3;
+  color: #818181;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #064579;
+  color: #f1f1f1;
 }
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }

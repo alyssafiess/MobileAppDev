@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<php>
 <html>
 <head>
 <title>RSVPiDo</title>
@@ -29,10 +30,28 @@
 
 <div class="main">
   <h3><center>Saturday May 11th, 2019</h3>
-  <h4><center>Exchange of Vows</center></h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque rhoncus purus velit, fermentum nisi congue volutpat fusce ut iaculis nibh potenti quisque, sociosqu dignissim gravida luctus blandit curae felis ornare ligula ridiculus. Arcu porta dictumst sodales facilisis, faucibus suscipit lacinia ante cum, platea phasellus pellentesque. Eget cursus mattis porta posuere cubilia quam ligula, in vivamus turpis felis lacus vulputate, nostra netus fermentum consequat magna sapien. Metus penatibus dictumst elementum est quisque nec venenatis donec, parturient enim magna libero facilisi ligula diam.</p>
-  <p><a target="_blank" href="Img4.jpg">
-  <thumbimg src="module 02\project\Images\Img4.jpg" alt="Engagement Rings" style="width:150px">
+  <h4><center>Attendee's</center></h4>
+  <?php
+
+  $slq = "SELECT fname, lname, guestnum FROM `guests`;
+  $result = mysql_query($conn, $sql);
+
+  echo "<div id='label-row'><div class='label'>First Name</div><div class='label'>Last Name</div><dive class='label'>Guest Number</div>"
+
+  if (mysql_query($result) > 0) {
+    while($row = mysql_query($result)) {
+      echo "fname: " . $row["fname"] . "<br>";
+      echo "lname: " . $row["lname"] . "<br>";
+      echo "guestnum: " . $row["guestnum"] . "<br>";
+    }
+  } else {
+    echo "0 results";
+  }
+
+  mysql_close($conn);
+  ?>
+  <a target="_blank" href="Img4.jpg">
+  <thumbimg src="Images/Img4.jpg" alt="Engagement Rings" style="width:150px">
 </a>Sem nisi suscipit primis commodo facilisi ad natoque, ante imperdiet cum ligula duis platea, a fermentum purus feugiat himenaeos cubilia. Sodales sociis consequat lobortis sagittis suscipit facilisis torquent est risus, ante cursus nascetur conubia neque dignissim posuere facilisi phasellus condimentum, iaculis penatibus sollicitudin commodo mollis enim proin nulla. Etiam aenean cum at vivamus erat sociis integer dui nibh class auctor iaculis, ac molestie est condimentum ultricies dignissim parturient venenatis felis lobortis.</p>
 </center>
 </div>

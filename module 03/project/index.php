@@ -10,7 +10,7 @@
 <div class=".slidshow-container">
     <img src="Images/Img3.jpg" alt="Wedding Photo">
 </div>
-<div class="topnav" style="padding-left:165px" style="padding-top:10px">
+<div class="topnav" style="padding-right: 10px" style="padding-top:10px">
   <a class="active" href="#home">Save the Date</a>
   <a href="#photos">Engagement Photos</a>
   <a href="#directions">Venue Directions</a>

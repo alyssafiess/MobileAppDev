@@ -1,6 +1,4 @@
 <?php
-include 'mod3_config.php';
-include 'mod3_opendb.php;
 
 $slq = "SELECT fname, lname, guestnum FROM `guests` WHERE state IN ('IL')";
 $result = mysql_query($conn, $sql);

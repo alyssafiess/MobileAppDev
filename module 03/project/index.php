@@ -30,10 +30,9 @@
 <div class="main">
   <h3><center>Saturday May 11th, 2019</h3>
   <h4><center>Attendee's</center></h4>
-  <p><?php include 'php/attendees.php';?></p>
-  <a target="_blank" href="Img4.jpg">
-  <thumbimg src="Images/Img4.jpg" alt="Engagement Rings" style="width:150px">
-</a>Sem nisi suscipit primis commodo facilisi ad natoque, ante imperdiet cum ligula duis platea, a fermentum purus feugiat himenaeos cubilia. Sodales sociis consequat lobortis sagittis suscipit facilisis torquent est risus, ante cursus nascetur conubia neque dignissim posuere facilisi phasellus condimentum, iaculis penatibus sollicitudin commodo mollis enim proin nulla. Etiam aenean cum at vivamus erat sociis integer dui nibh class auctor iaculis, ac molestie est condimentum ultricies dignissim parturient venenatis felis lobortis.</p>
+  <p>
+    <?php include 'attendees.php';?>
+  </p>
 </center>
 </div>
 </body>

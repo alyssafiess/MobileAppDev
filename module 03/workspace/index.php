@@ -31,8 +31,32 @@
   <h3><center>Saturday May 11th, 2019</h3>
   <h4><center>Attendee's</center></h4>
   <p>
-<?php include 'test.php';?>
-  </p>
+<?php
+include 'config.php';
+include 'opendb.php';
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+//retrieve data to display from SQL query
+$slq = "SELECT fname, lname, guestnum FROM `RSVPiDo`.`guests`;
+$result = mysql_query($conn, $sql);
+
+if (mysql_query($result) > 0) {
+  while($row = mysql_query($result)) {
+    echo "fname: " . $row["fname"] . "<br>";
+    echo "lname: " . $row["lname"] . "<br>";
+    echo "guestnum: " . $row["guestnum"] . "<br>";
+  }
+  else {
+  echo "0 results";
+  }
+}
+
+$mysqli_close($conn);
+?>
+</p>
 </center>
 </div>
 </body>

@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "afadmin";
 $password = "DevNull//1111";
 //open connection
-$conn = new mysqli($servername, $username, $password);
+$conn = mysqli($servername, $username, $password);
 //check for connection failure
 
 if ($conn->connect_error) {

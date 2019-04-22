@@ -26,6 +26,16 @@ img {
   text-align: center;
 }
 
+/*formatting for table data */
+.output-row {
+  display: center;
+}
+
+.output {
+  min-width: 200px;
+  font-size: 16px;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

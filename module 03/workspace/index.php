@@ -30,7 +30,6 @@
 <div class="main">
   <h3><center>Saturday May 11th, 2019</h3>
   <h4><center>Attendee's</center></h4>
-  <p>
 <?php
 include 'config.php';
 include 'opendb.php';
@@ -40,14 +39,16 @@ if ($conn->connect_error) {
 }
 
 //retrieve data to display from SQL query
-$slq = "SELECT fname, lname, guestnum FROM `RSVPiDo`.`guests`;
+$slq = "SELECT guestnum, fname, lname FROM guests";
 $result = mysql_query($conn, $sql);
+
+echo "<div id='output-row'><div class='ouput'>Guest Number</div><div class='ouput'>First Name</div><div class='ouput'>Last Name</div></div>";
 
 if (mysql_query($result) > 0) {
   while($row = mysql_query($result)) {
+    echo "gustnum: " . $row["guestnum"] . "<br>";
     echo "fname: " . $row["fname"] . "<br>";
     echo "lname: " . $row["lname"] . "<br>";
-    echo "guestnum: " . $row["guestnum"] . "<br>";
   }
   else {
   echo "0 results";
@@ -56,7 +57,7 @@ if (mysql_query($result) > 0) {
 
 $mysqli_close($conn);
 ?>
-</p>
+</div>
 </center>
 </div>
 </body>

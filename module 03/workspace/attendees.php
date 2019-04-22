@@ -23,8 +23,9 @@ if (mysql_query($result) > 0) {
     echo "lname: " . $row["lname"] . "<br>";
     echo "guestnum: " . $row["guestnum"] . "<br>";
   }
-} else {
+  else {
   echo "0 results";
+  }
 }
 
 $mysqli_close($conn);

@@ -129,6 +129,12 @@ thumbimg:hover {
   padding: 0px 0px;
 }
 
+.label {
+  margin-center: auto;
+  font-size: 18px;
+  padding: 0px 0px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

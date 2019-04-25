@@ -33,10 +33,6 @@
 include 'config.php';
 include 'opendb.php';
 
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
 //retrieve data to display from SQL query
 $slq = "SELECT guestnum, fname, lname FROM guests";
 $result = mysql_query($conn, $sql);

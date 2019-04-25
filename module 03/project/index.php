@@ -31,7 +31,26 @@
   <h3><center>Saturday May 11th, 2019</h3>
   <h4><center>Attendee's</center></h4>
   <p>
-    <?php include 'attendees.php';?>
+    <?php
+    include 'config.php';
+    include 'opendb.php';
+
+    //retrieve data to display from SQL query
+    $slq = "SELECT guestnum, fname, lname FROM guests";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_query($result) > 0) {
+      while($row = mysqli_fetch_assoc($result)) {
+        echo "Guest Number: " . $row["guestnum"] . "<br>";
+        echo "First Name: " . $row["fname"] . "<br>";
+        echo "Last Name: " . $row["lname"] . "<br>";
+      }
+    } else {
+      echo "0 results";
+      }
+      $mysqli_close($conn);
+
+    ?>
   </p>
 </center>
 </div>

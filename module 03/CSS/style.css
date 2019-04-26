@@ -128,16 +128,23 @@ thumbimg:hover {
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 0px;
 }
-
+#label-row {
+  display: center;
+}
 .label {
   min-width: 280px;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
+  margin-center: auto;
+  padding: 0px 0px;
+  display: center;
 }
 .info-row {
-  display: flex;
+  display: center;
+  font-size: 18px;
 }
 .info {
+  display: center;
   min-width: 280px;
 }
 

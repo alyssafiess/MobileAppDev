@@ -37,11 +37,11 @@
   $sql= "SELECT guestnum, fname, lname FROM guests ORDER BY guestnum ASC";
   $result = mysqli_query($conn, $sql);
 
-  echo "<div id='label-row'><div align= center><div class='label'>Guest Number</div><div class='label'>First Name</div><div class='label'>Last Name</div></div></div>";
+  echo "<div id='label-row'><div class='label'>Guest Number</div><div class='label'>First Name</div><div class='label'>Last Name</div></div>";
 
   if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
-      echo "<div class='info-row'><div align= center><div class='info'>" . $row['guestnum'] . "</div><div class='info'>" . $row['fname'] . "</div><div class='info'>" . $row["lname"] . "</div></div></div>";
+      echo "<div class='info-row'><div class='info'>" . $row['guestnum'] . "</div><div class='info'>" . $row['fname'] . "</div><div class='info'>" . $row["lname"] . "</div></div>";
     }
   } else {
     echo "0 results";

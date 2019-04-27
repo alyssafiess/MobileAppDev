@@ -138,7 +138,6 @@ thumbimg:hover {
   display: flex;
 }
 .label {
-  margin-left: auto;
   min-width: 280px;
   font-size: 20px;
   font-weight: bold;
@@ -150,7 +149,6 @@ thumbimg:hover {
   display: flex;
 }
 .info {
-  margin-left: auto;
   min-width: 280px;
   font-size: 18px;
   font-weight: normal;

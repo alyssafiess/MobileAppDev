@@ -3,7 +3,7 @@
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {
-  max-width:100%;
+  min-width:100%;
   vertical-align: middle;}
 
 /* Slideshow container */
@@ -65,25 +65,32 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 .topnav {
+  margin-left: 200px;
   overflow: hidden;
   background-color: #333;
 }
 .nav-btn {
-  padding: 20px 15px;
-  background-color: inherit;
-  margin: 20px;
-  border: 2px black;
+  padding: 15px 10px;
+  margin-left: 200px;
+  background-color: 333;
+  border-radius: 5px;
+  border: solid white;
 }
-
+.nav-btn:hover, .nav-btn:active {
+  background-color: inherit;
+}
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
 .topnav a {
-  float: right;
   width: 100%;
   height: auto;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .topnav a:hover {
@@ -105,22 +112,21 @@ thumbimg {
 thumbimg:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
 .sidenav {
-  height: 100%;
-  width: 160px;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  height: 100%;
+  width: 200px;
+  top:0;
+  left:0;
   background-color: #111;
-  overflow-x: hidden;
   padding-top: 20px;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
 }
@@ -130,14 +136,16 @@ thumbimg:hover {
 }
 
 .main {
-  margin-left: auto; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 0px;
+  position: relative;
 }
 #label-row {
   display: flex;
 }
 .label {
+  margin-left: 200px;
   min-width: 280px;
   font-size: 20px;
   font-weight: bold;
@@ -149,6 +157,7 @@ thumbimg:hover {
   display: flex;
 }
 .info {
+  margin-left: 200px;
   min-width: 280px;
   font-size: 18px;
   font-weight: normal;

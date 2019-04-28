@@ -14,7 +14,7 @@
   <a class="active" href="#rsvp">RSVP</a>
   <a href="index.html" class="nav-btn">Save the Date</a>
   <a href="photos.html" class="nav-btn">Engagement Photos</a>
-  <a href="maps.html" class="nav-btn">Directions</a>
+  <a href="maps.html" class="nav-btn">Venue Directions</a>
   <a href="stay.html" class="nav-btn">Nearby Lodging</a>
 </div>
 
@@ -22,12 +22,14 @@
   <a href="Logo.jpg">
   <img src="Images/Logo.jpg" alt="RSVPiDo" style="width:150px">
   </a>
-  <a href="home.html">Save the Date</a>
-  <a href="gift.html">Gift Registry</a>
+  <a href="index.html">Save the Date</a>
+  <a href="https://www.target.com/gift-registry/" target=_blank>Gift Registry</a>
   <a href="contact.html">Contact Us</a>
 </div>
 
 <div class="main">
+  <h2><center>RSVP</center></h2><br>
+  <p>PHP code will go here for guest to RSVP</p>
   </div>
 </body>
 </html>

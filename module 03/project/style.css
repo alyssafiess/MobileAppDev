@@ -68,7 +68,6 @@ img {
   overflow: hidden;
   background-color: #333;
 }
-
 .topnav a {
   float: right;
   width: 100%;
@@ -79,12 +78,10 @@ img {
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
-
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
@@ -95,10 +92,10 @@ thumbimg {
   padding: 5px;
   width: 150px;
 }
-
 thumbimg:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
 .sidenav {
   height: 100%;
   width: 160px;
@@ -110,7 +107,6 @@ thumbimg:hover {
   overflow-x: hidden;
   padding-top: 20px;
 }
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;

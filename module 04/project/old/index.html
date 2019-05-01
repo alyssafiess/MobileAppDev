@@ -7,16 +7,28 @@
 </head>
 <body>
 
-<div class=".img">
+<div class=".slidshow-container">
     <img src="Images/Img3.jpg" alt="Wedding Photo">
 </div>
-<div id="topnav" style="padding-top:0px">
-  <a href="index.html" class="nav-btn">Save the Date</a>
+<div class="navbar" style="padding-top:0px">
+  <a href="#home" class="active">Save the Date</a>
   <a href="photos.html" class="nav-btn">Engagement Photos</a>
   <a href="maps.html" class="nav-btn">Venue Directions</a>
   <a href="stay.html" class="nav-btn">Nearby Lodging</a>
   <a href="rsvp.php" class="nav-btn">RSVP</a>
+  <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+
+<script>
+fucntion myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
 <div class="sidenav">
   <a href="Logo.jpg">
@@ -32,6 +44,7 @@
   <h4><center>Exchange of Vows</center></h4>
   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque rhoncus purus velit, fermentum nisi congue volutpat fusce ut iaculis nibh potenti quisque, sociosqu dignissim gravida luctus blandit curae felis ornare ligula ridiculus. Arcu porta dictumst sodales facilisis, faucibus suscipit lacinia ante cum, platea phasellus pellentesque. Eget cursus mattis porta posuere cubilia quam ligula, in vivamus turpis felis lacus vulputate, nostra netus fermentum consequat magna sapien. Metus penatibus dictumst elementum est quisque nec venenatis donec, parturient enim magna libero facilisi ligula diam.</p>
   <p>Sem nisi suscipit primis commodo facilisi ad natoque, ante imperdiet cum ligula duis platea, a fermentum purus feugiat himenaeos cubilia. Sodales sociis consequat lobortis sagittis suscipit facilisis torquent est risus, ante cursus nascetur conubia neque dignissim posuere facilisi phasellus condimentum, iaculis penatibus sollicitudin commodo mollis enim proin nulla. Etiam aenean cum at vivamus erat sociis integer dui nibh class auctor iaculis, ac molestie est condimentum ultricies dignissim parturient venenatis felis lobortis.</p>
+</center>
 </div>
 </body>
 </html>

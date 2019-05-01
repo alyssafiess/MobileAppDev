@@ -7,11 +7,11 @@
 </head>
 <body>
 
-<div class=".slidshow-container">
-    <img src="Images/Img3.jpg" alt="Wedding Photo">
+<div class=".img">
+      <img src="Images/Img3.jpg" alt="Wedding Photo">
 </div>
-<div class="topnav" style="padding-top:0px">
-  <a class="active" href="#rsvp">RSVP</a>
+<div id="topnav" style="padding-top:0px">
+  <a href="rsvp.php" class="nav-btn">RSVP</a>
   <a href="index.html" class="nav-btn">Save the Date</a>
   <a href="photos.html" class="nav-btn">Engagement Photos</a>
   <a href="maps.html" class="nav-btn">Venue Directions</a>

@@ -1,0 +1,174 @@
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slideshow container code for later use*/
+.slideshow-container {
+  min-width: 100%;
+  max-height: 300px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#topnav {
+  display: flex;
+  overflow: hidden;
+  margin-left:200px;
+  padding-top:0px;
+}
+.nav-btn {
+  padding: 10px 10px;
+  background: green;
+  margin: none;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.nav-btn a {
+  padding: 10px 10px;
+  background: grey;
+  margin: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.nav-btn:hover, .nav-btn:active {
+  background: grey;
+}
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  top:0;
+  left:0;
+  background-color: #111;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+  position: relative;
+}
+#label-row {
+  display: flex;
+}
+.label {
+  margin-left: 200px;
+  min-width: 280px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info-row {
+  min-width: 280px;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+}
+.info {
+  margin-left: 200px;
+  min-width: 280px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 411px) {
+  .img {
+    max-width: inherit;
+    max-height: 200px;
+  }
+  .sidenav {
+  display: none;
+  }
+  #topnav {
+    margin-left:0px;
+    max-width:inherit;
+  }
+  .nav-btn {
+    font-size: 12px;
+  }
+  .main {
+    margin-left:0px;
+  }
+}
+</style>

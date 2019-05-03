@@ -89,16 +89,11 @@ img {
   border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
   border: 1px solid black;
 }
-.nav-btn:hover, .nav-btn:active {
+.nav-btn:hover, .nav-btn a:active {
   color: grey;
 }
-a:link, a:visited, a:hover {
+a:link, a:visited {
   color: white;
-  text-decoration: none;
-}
-/* adjust font color on active tab*/
-a:active {
-  color: grey;
   text-decoration: none;
 }
 
@@ -180,21 +175,25 @@ a:active {
     padding-top: 2px;
   }
   .foot-btn {
-    padding: 2px 2px;
+    padding: 2px 16px;
     background-color: grey;
     margin: none;
     display: inline;
   }
   .foot-btn a {
-    padding: 2px 2px;
+    padding: 2px 16px;
     text-decoration: none;
     margin: none;
-    color: #white;
     display: block;
   }
-  .footbtn a:hover {
-    color: #black;
+  .foot-btn:hover, .foot-btn a:active {
+    color: #grey;
   }
+  a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
 
   #topnav {
     margin-left:0px;

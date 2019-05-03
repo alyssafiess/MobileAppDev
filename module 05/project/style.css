@@ -84,7 +84,7 @@ img {
 }
 .nav-btn a {
   padding: 4px 4px; /*<- ADJUST TO 4px padding on both sides*/
-  background: grey;
+  color: grey;
   margin: none;
   border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
   border: 1px solid black;
@@ -125,7 +125,7 @@ a:link, a:visited {
 
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
+  font-size: 18px; /* Increased text to enable scrolling */
   padding: 0px 0px;
   position: relative;
 }
@@ -190,11 +190,8 @@ a:link, a:visited {
     margin: none;
     display: block;
   }
-  .foot-btn a:hover {
-    color: #f1f1f1;
-  }
-  .foot-btn a:active {
-    color: #black;
+  .footnav:hover {
+    color: grey;
   }
 
   #topnav {

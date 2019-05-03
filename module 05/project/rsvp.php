@@ -16,7 +16,7 @@
   <a href="photos.html" class="nav-btn">Engagement Photos</a>
   <a href="maps.html" class="nav-btn">Venue Directions</a>
   <a href="stay.html" class="nav-btn">Nearby Lodging</a>
-  <a href="rsvp.php" class="nav-btn:active">RSVP</a>
+  <a href="rsvp.php" class="nav-btn">RSVP</a>
 </div>
 
 <div class="sidenav">

@@ -32,4 +32,11 @@
   <p>PHP code will go here for guest to RSVP</p>
   </div>
 </body>
+<footer>
+  <div class="footnav">
+    <a href="index.html" class="foot-btn">Save the Date</a>
+    <a href="https://www.target.com/gift-registry/" target=_blank class="foot-btn">Gift Registry</a>
+    <a href="contact.html" class="foot-btn">Contact Us</a>
+  </div>
+</footer>
 </html>

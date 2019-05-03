@@ -23,7 +23,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 14px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -65,7 +65,7 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 360px) { /*<- ADJUST TO  360px*/
+@media only screen and (max-width: 360px)  {
   .prev, .next,.text {font-size: 9px} /*<- ADJUST TO  9 or 10px*/
 }
 
@@ -90,7 +90,7 @@ img {
   border: 1px solid black;
 }
 .nav-btn:hover, .nav-btn:active {
-  background: grey;
+  color: grey;
 }
 a:link, a:visited, a:hover {
   color: white;
@@ -130,6 +130,7 @@ a:active {
   padding: 0px 0px;
   position: relative;
 }
+
 #label-row {
   display: flex;
 }
@@ -152,25 +153,55 @@ a:active {
   font-weight: normal;
 }
 
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 585px) { /*Adjusted to 585px for responsive fit*/
   .img {
     max-width: inherit;
     max-height: 200px;
   }
   .sidenav {
-  display: none;
+    display: none;
   }
+  /* add footer navigation / hide display until screen size is smaller*/
+  .footnav {
+    display: flex;
+    position: fixed;
+    background-color: grey;
+    height: 25px;
+    width: 100%;
+    bottom:0;
+    left:0;
+    font-size: 11px;
+    padding-top: 2px;
+  }
+  .foot-btn {
+    padding: 2px 2px;
+    background-color: grey;
+    margin: none;
+    display: inline;
+  }
+  .foot-btn a {
+    padding: 2px 2px;
+    text-decoration: none;
+    margin: none;
+    color: #white;
+    display: block;
+  }
+  .footbtn a:hover {
+    color: #black;
+  }
+
   #topnav {
     margin-left:0px;
     max-width:inherit;
   }
   .nav-btn {
-    font-size: 12px;
+    font-size: 11px; /*Adjusted font size on nav button for mobile */
   }
   .main {
     margin-left:0px;

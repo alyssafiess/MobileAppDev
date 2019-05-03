@@ -65,8 +65,8 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+@media only screen and (max-width: 360px) { /*<- ADJUST TO  360px*/
+  .prev, .next,.text {font-size: 9px} /*<- ADJUST TO  9 or 10px*/
 }
 
 #topnav {
@@ -76,24 +76,29 @@ img {
   padding-top:0px;
 }
 .nav-btn {
-  padding: 10px 10px;
+  padding: 4px 4px; /*<- ADJUST TO 4px padding on both sides*/
   background: green;
   margin: none;
-  border-radius: 5px;
+  border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
   border: 1px solid white;
 }
 .nav-btn a {
-  padding: 10px 10px;
+  padding: 4px 4px; /*<- ADJUST TO 4px padding on both sides*/
   background: grey;
   margin: none;
-  border-radius: 5px;
+  border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
   border: 1px solid black;
 }
 .nav-btn:hover, .nav-btn:active {
   background: grey;
 }
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:hover {
   color: white;
+  text-decoration: none;
+}
+/* adjust font color on active tab*/
+a:active {
+  color: grey;
   text-decoration: none;
 }
 

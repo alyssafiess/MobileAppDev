@@ -1,0 +1,214 @@
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slideshow container code for later use*/
+.slideshow-container {
+  min-width: 100%;
+  max-height: 300px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 360px)  {
+  .prev, .next,.text {font-size: 9px} /*<- ADJUST TO  9 or 10px*/
+}
+
+#topnav {
+  display: flex;
+  overflow: hidden;
+  margin-left:200px;
+  padding-top:0px;
+}
+.nav-btn {
+  padding: 4px 4px; /*<- ADJUST TO 4px padding on both sides*/
+  background: green;
+  margin: none;
+  border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
+  border: 1px solid white;
+}
+.nav-btn a {
+  padding: 4px 4px; /*<- ADJUST TO 4px padding on both sides*/
+  color: grey;
+  margin: none;
+  border-radius: 4px; /*<- ADJUST TO 4px border radius on both sides*/
+  border: 1px solid black;
+}
+.nav-btn:hover  {
+  color: grey;
+}
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+.nav-btn:active {
+  color: black;
+  text-decoration: none;
+}
+
+.sidenav {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  top:0;
+  left:0;
+  background-color: #111;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+  position: relative;
+}
+
+#label-row {
+  display: flex;
+}
+.label {
+  min-width: 110px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.info-row {
+  min-width: 110px;
+  font-size: 13px;
+  font-weight: normal;
+  display: flex;
+}
+.info {
+  min-width: 110px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 585px) { /*Adjusted to 585px for responsive fit*/
+  .img {
+    max-width: inherit;
+    max-height: 200px;
+  }
+  .sidenav {
+    display: none;
+  }
+  /* add footer navigation / hide display until screen size is smaller*/
+  .footnav {
+    display: flex;
+    position: fixed;
+    background-color: grey;
+    height: 25px;
+    width: 100%;
+    bottom:0;
+    left:0;
+    font-size: 11px;
+    padding-top: 2px;
+  }
+  .foot-btn {
+    padding: 2px 16px;
+    background-color: grey;
+    margin: none;
+    display: inline;
+  }
+  .foot-btn a {
+    padding: 2px 16px;
+    text-decoration: none;
+    margin: none;
+    display: block;
+  }
+  .footnav:hover {
+    color: grey;
+  }
+  .label {
+    margin-left: 0px;
+    max-width: inherit;
+  }
+  .info {
+    margin-left: 0px;
+    max-width: inherit;
+  }
+
+  #topnav {
+    margin-left:0px;
+    max-width:inherit;
+  }
+  .nav-btn {
+    font-size: 11px; /*Adjusted font size on nav button for mobile */
+  }
+  .main {
+    margin-left:0px;
+  }
+}
+</style>
